@@ -1,0 +1,27 @@
+---
+title: Home
+layout: base.njk
+permalink: story.html
+---
+<label for="winter">
+    <input type="checkbox" id="winter" onchange="ShowHideDiv(this)" />
+    Winter
+</label>
+<label for="summer">
+    <input type="checkbox" id="summer" onchange="ShowHideDiv(this)" />
+    Summer
+</label>
+<hr />
+
+<!-- Display text -->
+<div>
+    <p style="display: none" data-target="#winter">Text come here</p>
+    <p style="display: none" data-target="#summer">Text come here for summer</p>
+</div>
+
+<script type="text/javascript">
+    function ShowHideDiv(elem) {
+        var target = document.querySelector('[data-target="#'+elem.id+'"]');
+        target.style.display = elem.checked ? 'block' : 'none';
+    }
+</script>
