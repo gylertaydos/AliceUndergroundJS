@@ -3,6 +3,7 @@ body {
     color: black;
     font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
+
 nav {
     background-color: white;
     color: black;
@@ -17,9 +18,14 @@ nav {
     margin-right: 20px;
     margin-left: 20px;
 }
-div.batch {
-    display: flex;
-    width: 100%;
+
+div.chapter {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: grid; /* use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    grid-gap: 10px; /* gap between items */
 }
 div.gallery {
     border-style: outset;
@@ -28,9 +34,11 @@ div.gallery {
     border-radius: 5px;
     background-color: white;
     color: black;
-    width: 25%;
-    }
-   div.gallery img {
-  width: 100%;
-  height: auto;
+    width: auto%;
+}
+
+div.gallery img {
+    aspect-ratio: auto;
+    width: 50%;
+    height: auto;
 }

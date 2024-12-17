@@ -23,6 +23,11 @@ div {
     margin: auto;
 }
 
+h2.chapterHeading{
+    width: 50%;
+    margin: auto;
+}
+
 img {
     width: 50%;
     height: 50%;
@@ -49,6 +54,17 @@ nav {
     margin-right: 20px;
     margin-left: 20px;
 }
+
+ul {
+    overflow: auto;
+    list-style-type: none;
+}
+
+input {
+    position: sticky;
+    top: 0;
+}
+
 div.gallery {
                 margin: 5px;
                 border: 1px solid #ccc;
